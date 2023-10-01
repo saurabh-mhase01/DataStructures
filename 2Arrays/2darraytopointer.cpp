@@ -24,8 +24,9 @@ int main() {
 
     // Pointer to array
     int (*p)[col] = arr;
-
+    int exit =1;
     do {
+
         cout << "\nMenu:\n1. Store Array\n2. Print Array\n3. Find Maximum\n4. Find Minimum\n5. Find Average\n6. Find Sum\n7. Search Element\n8. Sum Two Arrays\n9. Exit\n";
         cout << "Enter your choice: ";
         int choice;
@@ -92,14 +93,14 @@ int main() {
                 }
                 break;
             case 9:
-                return 0;
+                exit=0;
             default:
                 {
                     cout << "Invalid choice. Please try again." << endl;
                 }
                 break;
         }
-    } while (true);
+    } while (exit != 0);
 
     return 0;
 }
