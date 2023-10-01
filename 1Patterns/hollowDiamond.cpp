@@ -88,3 +88,26 @@ int main2(int argc, char *argv[])
     }
 	 
 }
+
+//1 2 3 4 5
+//2     5
+//3   5
+//4 5
+//5
+
+int main3(int argc, char *argv[])
+{
+	 for(int i =5;i>=1;i--){
+        for(int j=1;j<i;j++){
+            if(j==1)
+            	cout<<6-i<<" ";
+            else if(i==5)
+            	cout<<j<<" ";
+            else
+            	cout<<"  ";
+        }
+        cout<<"5";
+        cout<<"\n";
+    }
+	 
+}
