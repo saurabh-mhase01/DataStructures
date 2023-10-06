@@ -8,14 +8,10 @@ void swap(int* arr,int i,int j){
 }
 int* insertionSort(int* arr,int size){
     for(int i =0;i<size;i++){
-        int min =0 ,index=i;
         for(int j=i+1;j<size;j++){
-            if(min>arr[j]){
-                min=arr[j];
-                index = i;
-            }  
+            
         }
-        swap(arr,i,index);
+        
     }
 }
 void printarray(int* arr,int size){
