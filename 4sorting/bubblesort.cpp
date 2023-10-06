@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 void swap(int* arr,int i,int j){
     int t=arr[i];
     arr[i]=arr[j];
@@ -20,11 +19,8 @@ void printarray(int* arr,int size){
         cout<<arr[i]<<" ";
     }
 }
-
-
-
 int main(){
-    int size ;
+    int size;
     cout<<"enter size of array: ";
     cin>>size;
 
