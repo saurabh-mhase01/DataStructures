@@ -1,11 +1,6 @@
 #include<iostream>
 using namespace std;
 
-void swap(int* arr,int i,int j){
-    int t=arr[i];
-    arr[i]=arr[j];
-    arr[j]=arr[i];
-}
 int* insertionSort(int* arr,int size){
     int j=0;
     for(int i =1;i<size;i++){
@@ -24,6 +19,12 @@ void printarray(int* arr,int size){
         cout<<arr[i]<<" ";
     }
 }
+void store(int *arr,int size){
+    for(int i =0;i<size;i++){
+        cout<<"enter element :"<<i+1<<"\n";
+        cin>>arr[i];
+    }
+}
 
 int main(){
     int size ;
@@ -31,10 +32,7 @@ int main(){
     cin>>size;
 
     int arr[size];
-    for(int i =0;i<size;i++){
-        cout<<"enter element :"<<i+1;
-        cin>>arr[i];
-    }
+    store(arr,size);
     insertionSort(arr,size);
     printarray(arr,size);
     

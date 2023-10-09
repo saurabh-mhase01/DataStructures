@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
-void swap(int* arr,int i,int j){
+void swapp(int* arr,int i,int j){
     int t=arr[i];
     arr[i]=arr[j];
-    arr[j]=arr[i];
+    arr[j]=t;
 }
 int* bubbleSort(int* arr,int size){
-    for(int i =0;i<size;i++){
-        for(int j=i;j<size-1;j++){
+    for(int i =0;i<size-1;i++){   
+        for(int j=0;j<size-i-1;j++){
             if(arr[j]>arr[j+1]){
-                swap(arr,j,j+1);
+                swapp(arr,j,j+1);
             }  
         }
     }
@@ -26,7 +26,7 @@ int main(){
 
     int arr[size];
     for(int i =0;i<size;i++){
-        cout<<"enter element :"<<i+1;
+        cout<<"enter element :"<<i+1<<" ";
         cin>>arr[i];
     }
     bubbleSort(arr,size);
