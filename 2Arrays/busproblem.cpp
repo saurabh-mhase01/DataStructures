@@ -37,13 +37,16 @@ int main(){
     // while(j<=endindex){ this was my mistake 
     while(j!=endindex-1){
         sum += dis[j];
-        cout<<sum<<" "<<j<<endl;
+        
         j++;
         if(j==8){
             j=0;
         }
     }
-    cout<<sum;
+
+    float fair = sum/1000;
+    
+    cout<<fair*5;
 }
 
 
