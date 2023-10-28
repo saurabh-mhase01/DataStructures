@@ -26,7 +26,9 @@ class Book {
         strcpy(this->author,author);
         count = count+1;
     }
-    ~Book(){};
+    ~Book(){
+        cout<<"Destrector is called";
+    };
     //getters
     static int getCount(){
         return count;
